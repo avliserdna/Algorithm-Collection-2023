@@ -1,11 +1,4 @@
 function mostVowels(sentence) {
-    // take in sentence
-    // split into array
-    // create AEIOU checker
-    // create counter
-    // analyze per index, and get count of vowels
-    // return index of array with highest count
-
     const sentenceArr = sentence.split(" ")
     const result = { highest: null, counter: 0 }
 
