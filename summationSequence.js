@@ -4,7 +4,7 @@ function summationSequence(start, length) {
     // every other index in sequencce will be based off of  the summation of the PREVIOUS index i-1
 
     const sequence = Array(length)
-    sequence[0] = start
+    sequence[0] = start // First one will ALWAYS be start value anyway
     for (let i = 1; i < sequence.length; i++) {
         sequence[i] = summation(sequence[i - 1])
     }
