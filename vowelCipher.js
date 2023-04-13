@@ -20,7 +20,7 @@ function cipher(char, num) {
     let charIndex = alphabet.indexOf(char)
     let newIndex = charIndex + num;
     if (newIndex > alphabet.length) {
-        newIndex = num - 1
+        newIndex = newIndex - alphabet.length
     }
     return alphabet[newIndex]
 }
@@ -28,3 +28,4 @@ function cipher(char, num) {
 console.log(caesarCipher("apple", 1)); // "bqqmf"
 console.log(caesarCipher("bootcamp", 2)); // "dqqvecor"
 console.log(caesarCipher("zebra", 4)); // "difve"
+console.log(caesarCipher("xylophone", 3)); // "aborkrqh"
