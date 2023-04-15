@@ -1,3 +1,13 @@
+// function sameCharCollapse(str, result = []) {
+//     // Have a string
+//     // S
+// }
+
+// console.log(sameCharCollapse("zzzxaaxy"));  // "zy"
+// // because zzzxaaxy -> zxaaxy -> zxxy -> zy
+// console.log(sameCharCollapse("uqrssrqvtt")); // "uv"
+// because uqrssrqvtt -> uqrrqvtt -> uqqvtt -> uvtt -> uv
+
 function sameCharCollapse(str) {
     // take in a string
     // turn the string into an array
@@ -19,4 +29,4 @@ function sameCharCollapse(str) {
 console.log(sameCharCollapse("zzzxaaxy"));  // "zy"
 // because zzzxaaxy -> zxaaxy -> zxxy -> zy
 console.log(sameCharCollapse("uqrssrqvtt")); // "uv"
-// because uqrssrqvtt -> uqrrqvtt -> uqqvtt -> uvtt -> uv
+// // because uqrssrqvtt -> uqrrqvtt -> uqqvtt -> uvtt -> uv
