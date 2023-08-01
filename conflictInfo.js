@@ -22,7 +22,7 @@ function conflictInfo(meetings) {
   let durationSet = [];
   let hasConflict = false;
   let meetingStorage = {};
-  let timeSet = new Set();
+  // let timeSet = new Set();
   let length = Number(meetings[0]);
 
   for (let  m = 0; m < length; m++) {
@@ -52,18 +52,20 @@ console.log(meetingStorage)
           meetingStorage[i].push(resultTime);
 
 
-          if (timeSet.has(resultTime)) {
-              for (let k = 1; k < length; k++) {
-                  if (meetingStorage[k].includes(resultTime)) {
-                      conflictTime+= Math.abs(durationSet[k-1] - duration)
-                  }
-              }
-              hasConflict = true
-              totalConflict++
-          }
-          else {
-              timeSet.add(resultTime)
-          }
+          // if (timeSet.has(resultTime)) {
+          //     for (let k = 1; k < length; k++) {
+          //         if (meetingStorage[k].includes(resultTime)) {
+          //             conflictTime+= Math.abs(durationSet[k-1] - duration)
+          //         }
+          //     }
+          //     hasConflict = true
+          //     totalConflict++
+          // }
+          // else {
+          //     timeSet.add(resultTime)
+          // }
+
+
       }
   }
 
