@@ -12,8 +12,7 @@ function range (min, max) {
   const result = new Array();
   let i = 0;
   while ((min+i) <= max) {
-    // result.push(min)
-    // min += 1
+
     result[i] = min + i;
     i++
   }
