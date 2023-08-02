@@ -1,14 +1,24 @@
-function range(min, max) {
-  let result = []
-  for (let i = 0; min <= max; i++) {
-    if ((min+i) > max) {
-      break
-    }
-    result[i] = min+i
+// function range(min, max) {
+//   let result = []
+//   for (let i = 0; min <= max; i++) {
+//     if ((min+i) > max) {
+//       break
+//     }
+//     result[i] = min+i
+//   }
+//   return result
+// }
+function range (min, max) {
+  const result = new Array();
+  let i = 0;
+  while ((min+i) <= max) {
+    // result.push(min)
+    // min += 1
+    result[i] = min + i;
+    i++
   }
   return result
 }
-
 
 
 
