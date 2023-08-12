@@ -16,7 +16,8 @@ function pairProduct(list, target) {
   }
   return false
 }
-
+// o(n2) because you check everything multiple times to ensure all variants are possible pairs to equal target
+// brute force method
 
 
 console.log(pairProduct([4, 2, 5, 8], 16))    // true
