@@ -9,14 +9,8 @@ function uncompress(str) {
   let char = "";
   let num = 0;
   let result = "";
-    for (let i = 0; i < strArr.length; i++) {
-    if (Number(strArr[i])) {
-      num = strArr[i]
-    }
-    else {
-      char = strArr[i]
-    }
-
+    for (el of strArr) {
+      Number(el) ? num = el : char = el
     if (char && num) {
       for (let j = 0; j < num; j++) {
         result+= char
